@@ -119,9 +119,9 @@ export async function downloadSample() {
   const XLSX = await loadXLSX();
   const rows = [
     ["Name", "Company", "WhatsApp Number", "Country", "City", "Tags", "Budget"],
-    ["Ahmed Al Mansoori", "Al Mansoori Jewellers", "+971 50 123 4567", "UAE", "Dubai", "VIP, Retailer", "$120k"],
-    ["Linda Chen", "Golden Lotus Jewelry", "+852 9123 4567", "Hong Kong", "Hong Kong", "Hong Kong Show", "$80k"],
-    ["Pieter Janssens", "Janssens & Zoon BV", "0470 12 34 56", "Belgium", "Antwerp", "Wholesaler", ""],
+    ["Ahmed Al Mansoori", "Al Mansoori Mobiles", "+971 50 123 4567", "UAE", "Dubai", "VIP, Retailer", "$120k"],
+    ["Linda Chen", "Golden Lotus Telecom", "+852 9123 4567", "Hong Kong", "Hong Kong", "HK Electronics Fair", "$80k"],
+    ["Pieter Janssens", "Janssens & Zoon BV", "0470 12 34 56", "Belgium", "Antwerp", "Distributor", ""],
   ];
   const ws = XLSX.utils.aoa_to_sheet(rows);
   ws["!cols"] = [{ wch: 22 }, { wch: 24 }, { wch: 20 }, { wch: 12 }, { wch: 12 }, { wch: 22 }, { wch: 10 }];

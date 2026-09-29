@@ -51,7 +51,7 @@ export function LoginPage() {
             <span className="flex size-10 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/20">
               <Sparkles className="size-5 text-pink-300" />
             </span>
-            <span className="font-display text-xl font-bold">Starlink Jewels</span>
+            <span className="font-display text-xl font-bold">IBELL MOBILE</span>
           </div>
         </div>
         <div className="relative mt-auto max-w-md">

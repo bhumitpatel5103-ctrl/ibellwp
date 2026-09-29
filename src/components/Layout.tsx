@@ -103,7 +103,7 @@ export function Layout() {
           <MenuIcon className="size-5" />
         </button>
         <BrandMark />
-        <span className="min-w-0 flex-1 truncate font-display text-[16px] font-bold tracking-tight">{status?.businessName || "Starlink Jewels"}</span>
+        <span className="min-w-0 flex-1 truncate font-display text-[16px] font-bold tracking-tight">{status?.businessName || "IBELL MOBILE"}</span>
         <button onClick={openCommand} className="flex size-9 items-center justify-center rounded-lg text-ink-2 hover:bg-surface-2" aria-label="Search">
           <Search className="size-5" />
         </button>
@@ -160,7 +160,7 @@ function Sidebar({ collapsed, onFold, dark, onTheme, onSignOut, onClose }: { col
               {!collapsed && (
                 <>
                   <span className="min-w-0 flex-1 leading-tight">
-                    <span className="block truncate text-[14px] font-semibold text-ink">{status?.businessName || "Starlink Jewels"}</span>
+                    <span className="block truncate text-[14px] font-semibold text-ink">{status?.businessName || "IBELL MOBILE"}</span>
                     <span className="block truncate text-[11.5px] text-ink-3">WhatsApp Studio</span>
                   </span>
                   <ChevronsUpDown className="size-4 shrink-0 text-ink-3" />
@@ -172,7 +172,7 @@ function Sidebar({ collapsed, onFold, dark, onTheme, onSignOut, onClose }: { col
           {(close) => (
             <div className="w-60">
               <div className="px-2.5 pb-2 pt-1.5">
-                <div className="truncate text-[13px] font-semibold text-ink">{status?.businessName || "Starlink Jewels"}</div>
+                <div className="truncate text-[13px] font-semibold text-ink">{status?.businessName || "IBELL MOBILE"}</div>
                 <div className="truncate text-[12px] text-ink-3">{status?.wa.phoneDisplay ?? "WhatsApp not connected"}</div>
               </div>
               <div className="my-1 border-t border-line" />

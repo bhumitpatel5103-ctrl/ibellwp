@@ -114,7 +114,7 @@ export function AddToBatchModal({ open, onClose, selection, count, onDone }: { o
           </div>
           <div>
             <Label htmlFor="b-desc" hint="Optional">Description</Label>
-            <textarea id="b-desc" rows={2} className="field resize-y" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Who is in it and why — e.g. buyers met at the Dubai show, interested in solitaires" />
+            <textarea id="b-desc" rows={2} className="field resize-y" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Who is in it and why — e.g. dealers met at GITEX Dubai, interested in 5G smartphones" />
           </div>
           <div>
             <Label>Colour</Label>

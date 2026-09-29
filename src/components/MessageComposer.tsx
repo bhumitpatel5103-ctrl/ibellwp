@@ -10,7 +10,7 @@ import { Button, Modal, Empty, Label } from "./ui";
 import { MediaBlock } from "./PhonePreview";
 import { AiMenu, AiWriterModal } from "./AiTools";
 
-const EMOJI = ["💎", "✨", "💍", "👑", "🌟", "🎉", "🙏", "📦", "📞", "👇", "✅", "🔥", "🪔", "🎁", "📍", "🤝"];
+const EMOJI = ["📱", "✨", "🔋", "🎧", "🌟", "🎉", "🙏", "📦", "📞", "👇", "✅", "🔥", "🪔", "🎁", "📍", "🤝"];
 
 /**
  * Where the message is written.
@@ -114,7 +114,7 @@ export function MessageComposer({
           onChange={(e) => onMessage(e.target.value)}
           rows={9}
           maxLength={4000}
-          placeholder={"Hello {{first_name|Sir/Madam}},\n\nOur new collection of certified diamond jewellery is ready…"}
+          placeholder={"Hello {{first_name|Sir/Madam}},\n\nOur new range of IBELL smartphones and accessories is ready…"}
           className="block w-full resize-y bg-transparent px-4 py-3 text-[14px] leading-relaxed text-ink outline-none placeholder:text-ink-3"
         />
 

@@ -77,9 +77,9 @@ export function PhonePreview({ text, media, contactName, business }: { text: str
         {/* header, as the client sees it: your business */}
         <div className="flex items-center gap-2 bg-[#008069] px-3 pb-2.5 pt-7 text-white dark:bg-[#202c33]">
           <ChevronLeft className="size-5 opacity-90" />
-          <Avatar name={business || "Starlink Jewels"} seed="business" size={32} />
+          <Avatar name={business || "IBELL MOBILE"} seed="business" size={32} />
           <div className="min-w-0 flex-1 leading-tight">
-            <div className="truncate text-[14px] font-medium">{business || "Starlink Jewels"}</div>
+            <div className="truncate text-[14px] font-medium">{business || "IBELL MOBILE"}</div>
             <div className="text-[11px] opacity-80">Business account</div>
           </div>
           <Video className="size-4 opacity-90" />

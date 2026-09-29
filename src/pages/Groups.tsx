@@ -282,7 +282,7 @@ function SendToGroup({ group, onClose }: { group: Group | null; onClose: () => v
       title={group ? `Send to “${group.name}”` : ""}
       footer={<><Button variant="ghost" onClick={onClose}>Cancel</Button><Button variant="primary" icon={<Send className="size-4" />} loading={send.isPending} disabled={!text.trim() && !media} onClick={() => send.mutate()}>Send now</Button></>}
     >
-      <textarea autoFocus rows={6} className="field resize-y" value={text} onChange={(e) => setText(e.target.value)} placeholder={"Good morning {{group_name}} 💎\n\nNew certified solitaires just arrived…"} />
+      <textarea autoFocus rows={6} className="field resize-y" value={text} onChange={(e) => setText(e.target.value)} placeholder={"Good morning {{group_name}} 📱\n\nNew smartphones and accessories just arrived…"} />
       <div className="mt-2 flex flex-wrap items-center gap-2">
         <button type="button" onClick={() => setText((t) => t + "{{group_name}}")} className="rounded-full border border-brand/25 bg-brand-soft px-2.5 py-1 text-[12px] font-medium text-brand-text">+ Group name</button>
         <Button size="sm" variant="ghost" icon={upload.isPending ? <Loader2 className="size-4 animate-spin" /> : <Paperclip className="size-4" />} onClick={() => file.current?.click()}>

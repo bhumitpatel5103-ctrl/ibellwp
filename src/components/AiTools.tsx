@@ -20,12 +20,12 @@ export const TONE_LABELS: Record<AiTone, string> = {
 };
 
 const IDEAS = [
-  "New collection launch — invite them to reply for the catalogue and B2B prices",
-  "Share our latest price list and ask which pieces interest them",
-  "Invite them to meet us at the upcoming jewellery show",
+  "New model launch — invite them to reply for the catalogue and dealer prices",
+  "Share our latest price list and ask which models interest them",
+  "Invite them to meet us at the upcoming mobile & electronics trade show",
   "Festive greetings and thanks for their business this year",
   "Follow up with clients who have not ordered recently",
-  "New stock of certified loose diamonds available now",
+  "Fresh stock of smartphones and accessories available now",
 ];
 
 /** A small line under AI buttons when AI cannot be used yet, with the way to fix it. */
@@ -106,7 +106,7 @@ export function AiWriterModal({ open, onClose, onUse }: { open: boolean; onClose
               className="field resize-y"
               value={brief}
               onChange={(e) => setBrief(e.target.value)}
-              placeholder="e.g. Our new bridal collection is ready — solitaire rings and eternity bands, GIA certified. Invite them to reply for the catalogue and B2B prices."
+              placeholder="e.g. Our new 5G smartphone range is ready — big batteries, fast charging and matching accessories. Invite them to reply for the catalogue and dealer prices."
             />
             <div className="mt-2 flex flex-wrap gap-1.5">
               {IDEAS.map((i) => (

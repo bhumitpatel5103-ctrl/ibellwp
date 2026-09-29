@@ -265,7 +265,7 @@ export function SettingsPage() {
                       checked={s.leadRadar.useAi}
                       onChange={(v) => up({ leadRadar: { ...s.leadRadar, useAi: v } })}
                       label="Let the AI read the conversation too"
-                      description={s.ai.hasKey ? "Adds a one-line note of what the buyer wants (e.g. “Price for 20 pcs 1ct+ GIA ovals”). Uses a small AI request per message." : "Needs a Sarvam API key in AI writer above. Without it, sorting still works by wording."}
+                      description={s.ai.hasKey ? "Adds a one-line note of what the buyer wants (e.g. “Price for 200 pcs 5G, 128GB”). Uses a small AI request per message." : "Needs a Sarvam API key in AI writer above. Without it, sorting still works by wording."}
                     />
                     <div className="flex flex-wrap items-center gap-2 text-sm text-ink-2">
                       Warn me when a buyer has waited
@@ -449,7 +449,7 @@ function AiSection({ s, up, dirty }: { s: Settings; up: (p: Partial<Settings>) =
             onChange={(e) => set({ businessProfile: e.target.value })}
             placeholder="What you make and sell, certifications, where you ship, what makes you different…"
           />
-          <p className="mt-1.5 text-[12px] text-ink-3">Write real facts: products, certifications (GIA/IGI), MOQ, shipping, payment terms. The AI will not invent prices or offers that are not here or in your brief.</p>
+          <p className="mt-1.5 text-[12px] text-ink-3">Write real facts: products, models, warranty, MOQ, shipping, payment terms. The AI will not invent prices or offers that are not here or in your brief.</p>
         </div>
 
         <div>
@@ -460,7 +460,7 @@ function AiSection({ s, up, dirty }: { s: Settings; up: (p: Partial<Settings>) =
             className="field resize-y"
             value={ai.instructions}
             onChange={(e) => set({ instructions: e.target.value })}
-            placeholder={"e.g. Always sign as “Team Starlink”. Never use the word “cheap”. Mention free insured shipping on orders over $10,000."}
+            placeholder={"e.g. Always sign as “Team IBELL”. Never use the word “cheap”. Mention the warranty on every handset."}
           />
         </div>
 

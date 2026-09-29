@@ -173,7 +173,7 @@ export function ClientDrawer({ open, contact, onClose }: { open: boolean; contac
         </div>
         <div>
           <Label htmlFor="c-company">Company</Label>
-          <input id="c-company" className="field" value={f.company} onChange={(e) => set("company", e.target.value)} placeholder="Al Mansoori Jewellers" />
+          <input id="c-company" className="field" value={f.company} onChange={(e) => set("company", e.target.value)} placeholder="Al Mansoori Mobiles" />
         </div>
         <div className="grid grid-cols-2 gap-3">
           <div>
@@ -217,7 +217,7 @@ export function ClientDrawer({ open, contact, onClose }: { open: boolean; contac
         </div>
         <div>
           <Label htmlFor="c-notes">Notes</Label>
-          <textarea id="c-notes" rows={3} className="field resize-y" value={f.notes} onChange={(e) => set("notes", e.target.value)} placeholder="Prefers 18K white gold. Visits Surat every March." />
+          <textarea id="c-notes" rows={3} className="field resize-y" value={f.notes} onChange={(e) => set("notes", e.target.value)} placeholder="Prefers 5G models, 128GB+d. Visits Surat every March." />
         </div>
         <div className="rounded-xl border border-line p-3.5">
           <Switch checked={f.optedOut} onChange={(v) => set("optedOut", v)} label="Opted out" description="Never include this client in campaigns." />

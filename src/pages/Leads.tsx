@@ -344,7 +344,7 @@ function LinkFormModal({ open, link, onClose }: { open: boolean; link: LeadLink 
     setF(link ? { name: link.name, code: link.code, source: link.source, prefill: link.prefill, tags: link.tags, batchId: link.batchId ?? "", welcome: link.welcome, active: link.active } : {
       ...EMPTY,
       prefill: `Hello${status?.businessName ? ` ${status.businessName}` : ""}, I would like to see your latest collection and B2B prices.`,
-      welcome: "Dear {{first_name|Sir/Madam}},\n\nThank you for reaching out 💎 Our team will share our latest collection and B2B prices with you shortly.\n\n— {{business_name}}",
+      welcome: "Dear {{first_name|Sir/Madam}},\n\nThank you for reaching out 📱 Our team will share our latest range and dealer prices with you shortly.\n\n— {{business_name}}",
     });
   }, [open, link, status?.businessName]);
 
@@ -478,7 +478,7 @@ h1{font-size:30px;line-height:1.15;margin:10mm 0 3mm}p{font-size:15px;color:#4b4
 .w{display:inline-flex;align-items:center;gap:8px;background:#25d366;color:#fff;font-weight:700;border-radius:999px;padding:8px 18px;font-size:15px}
 .f{margin-top:auto;font-size:11px;color:#8a86a3}</style></head><body><div class="p">
 <div class="b">${esc(status?.businessName || "")}</div>
-<h1>Scan to get our latest collection</h1><p>Certified diamond jewellery · B2B prices on WhatsApp</p>
+<h1>Scan to get our latest range</h1><p>Mobile phones &amp; accessories · Dealer prices on WhatsApp</p>
 <div class="q"><img src="${data.png}" alt="QR code"></div><span class="w">Scan · Press send · Done</span>
 <div class="f">Ref ${esc(link.code)}</div></div><script>window.onload=()=>{window.print()}</script></body></html>`);
     w.document.close();

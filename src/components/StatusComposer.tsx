@@ -87,7 +87,7 @@ export function StatusComposer({ open, onClose }: { open: boolean; onClose: () =
               <input ref={file} type="file" hidden accept="image/jpeg,image/png,image/webp,video/mp4" onChange={(e) => { const f = e.target.files?.[0]; if (f) upload.mutate(f); e.target.value = ""; }} />
               <div>
                 <Label htmlFor="st-cap" hint="Optional">Caption</Label>
-                <textarea id="st-cap" rows={3} className="field resize-y" value={caption} onChange={(e) => setCaption(e.target.value)} placeholder="New oval solitaires, GIA certified 💎 Reply for prices." />
+                <textarea id="st-cap" rows={3} className="field resize-y" value={caption} onChange={(e) => setCaption(e.target.value)} placeholder="New 5G smartphones just launched 📱 Reply for dealer prices." />
               </div>
             </>
           ) : (
